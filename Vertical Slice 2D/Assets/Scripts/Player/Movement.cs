@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public MeshRenderer MR;
-    public BoxCollider BC;
     public bool isTouch = false;
-    private CharacterController Player;
+    public CharacterController Player;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     public float playerSpeed = 2.0f;
@@ -19,7 +17,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         gameObject.tag = "Player";
-        Player = gameObject.AddComponent<CharacterController>();
+
     }
 
 

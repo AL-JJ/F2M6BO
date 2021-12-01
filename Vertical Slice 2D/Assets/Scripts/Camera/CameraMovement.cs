@@ -6,12 +6,12 @@ public class CameraMovement : MonoBehaviour
 {
     public Transform target;
 
-    public Vector3 offset = new Vector3(0, 2, 5);
+    public Vector3 offset = new Vector3(0, 2, 6);
     public float smoothSpeed = 10f;
 
     void Start()
     {
-        offset = new Vector3(0, 2, 5);
+        offset = new Vector3(0, 4, 6);
     }
     void LateUpdate()
     {
