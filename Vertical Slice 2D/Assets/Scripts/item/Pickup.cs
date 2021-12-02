@@ -6,22 +6,53 @@ using UnityEngine.UI;
 public class Pickup : MonoBehaviour
 {
     public Inventory inv;
+    private bool inrange = false;
 
-    [HideInInspector] public Sprite stick;
-    [HideInInspector] public Sprite rock;
-    [HideInInspector] public Sprite grass;
+    //drop down menu
+    public MyEnum ItemType = new MyEnum();
+    public enum MyEnum
+    {
+        Grass,
+        Stick,
+        Rock
+    };
+    public Sprite stick;
+    public Sprite rock;
+    public Sprite grass;
+
+
+    private void Update()
+    {
+        if (inrange == true && Input.GetKey("space"))
+        {
+            if (ItemType == MyEnum.Grass)
+            {
+                GrassPickUp();
+                inv.UpdateAmount();
+                Destroy(gameObject);
+            }
+            else if (ItemType == MyEnum.Stick)
+            {
+                StickPickUp();
+                inv.UpdateAmount();
+                Destroy(gameObject);
+            }
+        }
+    }
+
+
     public void GrassPickUp()
     {
         inv.PickUpLimit("Grass");
-        inv.Additem("Grass" , grass);
+        inv.Additem("Grass", grass);
     }
-    
+
     public void RockPickUp()
     {
         inv.PickUpLimit("Rock");
         inv.Additem("Rock", rock);
     }
-    
+
     public void StickPickUp()
     {
         inv.PickUpLimit("Stick");
@@ -29,6 +60,20 @@ public class Pickup : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            inrange = true;
+            print("player in range");
+        }
+    }
 
+
+    private void OnTriggerExit(Collider collision)
+    {
+        inrange = false;
+        print("player not in range");
+    }
 
 }

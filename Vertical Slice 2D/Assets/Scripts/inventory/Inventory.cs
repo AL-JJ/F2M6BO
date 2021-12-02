@@ -208,11 +208,129 @@ public class Inventory : Pickup
                 break;
 
             case "Rock":
-                
+                if (_Slot1Free == true)
+                {
+                    SlotCheck(1, ItemSprite);
+                }
+                else if (_Slot2Free == true)
+                {
+                    SlotCheck(2, ItemSprite);
+                }
+                else if (_Slot3Free == true)
+                {
+                    SlotCheck(3, ItemSprite);
+                }
+                else if (_Slot4Free == true)
+                {
+                    SlotCheck(4, ItemSprite);
+                }
+                else if (_Slot5Free == true)
+                {
+                    SlotCheck(5, ItemSprite);
+                }
+                else if (_Slot6Free == true)
+                {
+                    SlotCheck(6, ItemSprite);
+                }
+                else if (_Slot7Free == true)
+                {
+                    SlotCheck(7, ItemSprite);
+                }
+                else if (_Slot8Free == true)
+                {
+                    SlotCheck(8, ItemSprite);
+                }
+                else if (_Slot9Free == true)
+                {
+                    SlotCheck(9, ItemSprite);
+                }
+                else if (_Slot10Free == true)
+                {
+                    SlotCheck(10, ItemSprite);
+                }
+                else if (_Slot11Free == true)
+                {
+                    SlotCheck(11, ItemSprite);
+                }
+                else if (_Slot12Free == true)
+                {
+                    SlotCheck(12, ItemSprite);
+                }
+                else if (_Slot13Free == true)
+                {
+                    SlotCheck(13, ItemSprite);
+                }
+                else if (_Slot14Free == true)
+                {
+                    SlotCheck(14, ItemSprite);
+                }
+                else if (_Slot15Free == true)
+                {
+                    SlotCheck(15, ItemSprite);
+                }
                 break;
 
             case "Stick":
-           
+                if (_Slot1Free == true)
+                {
+                    SlotCheck(1, ItemSprite);
+                }
+                else if (_Slot2Free == true)
+                {
+                    SlotCheck(2, ItemSprite);
+                }
+                else if (_Slot3Free == true)
+                {
+                    SlotCheck(3, ItemSprite);
+                }
+                else if (_Slot4Free == true)
+                {
+                    SlotCheck(4, ItemSprite);
+                }
+                else if (_Slot5Free == true)
+                {
+                    SlotCheck(5, ItemSprite);
+                }
+                else if (_Slot6Free == true)
+                {
+                    SlotCheck(6, ItemSprite);
+                }
+                else if (_Slot7Free == true)
+                {
+                    SlotCheck(7, ItemSprite);
+                }
+                else if (_Slot8Free == true)
+                {
+                    SlotCheck(8, ItemSprite);
+                }
+                else if (_Slot9Free == true)
+                {
+                    SlotCheck(9, ItemSprite);
+                }
+                else if (_Slot10Free == true)
+                {
+                    SlotCheck(10, ItemSprite);
+                }
+                else if (_Slot11Free == true)
+                {
+                    SlotCheck(11, ItemSprite);
+                }
+                else if (_Slot12Free == true)
+                {
+                    SlotCheck(12, ItemSprite);
+                }
+                else if (_Slot13Free == true)
+                {
+                    SlotCheck(13, ItemSprite);
+                }
+                else if (_Slot14Free == true)
+                {
+                    SlotCheck(14, ItemSprite);
+                }
+                else if (_Slot15Free == true)
+                {
+                    SlotCheck(15, ItemSprite);
+                }
                 break;
             default:
                 UpdateAmount();
