@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public PlayerAnimation playerAnimation;
     public bool isTouch = false;
     // public CharacterController Player;
     public Rigidbody rb;
@@ -36,7 +37,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-
+            playerAnimation.AnimTrigger(true, "W");
             rb.velocity = new Vector3(0, 0, -playerSpeed);
         }
         //rechts
@@ -60,6 +61,7 @@ public class Movement : MonoBehaviour
         //rechts boven
         if (Input.GetKey("w") && Input.GetKey("d"))
         {
+            playerAnimation.AnimTrigger(true, "W");
             rb.velocity = new Vector3(-playerSpeed, 0, -playerSpeed);
         }
         //rechts beneden
@@ -70,6 +72,7 @@ public class Movement : MonoBehaviour
         //links boven
         if (Input.GetKey("w") && Input.GetKey("a"))
         {
+            playerAnimation.AnimTrigger(true, "W");
             rb.velocity = new Vector3(playerSpeed, 0, -playerSpeed);
         }
         //links beneden
@@ -82,6 +85,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyUp("w"))
         {
+            playerAnimation.Idle();
             rb.velocity = new Vector3(0, 0, 0);
         }
 

@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
             case "W":
                 if (enabled == true)
                 {
-                    
+                    animator.SetBool("WalkUp", enabled);
                 }
             break;
 
@@ -43,6 +43,6 @@ public class PlayerAnimation : MonoBehaviour
     }
     public void Idle()
     {
-        //speel de idle anim af
+        animator.SetBool("WalkUp", false);
     }
 }
