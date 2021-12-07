@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637744997792390173
-    m_Hash: 2053551833
+      ticks: 637745034157236522
+    m_Hash: 3119708035
   m_LockFileStatus:
     m_FilePath: D:/MediaCollege/bewijzenmap/leerjaar 2/Periode2.2/BO/F2M6BO/Vertical
       Splice 2D new/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637744998158145988
-    m_Hash: 2154220959
+      ticks: 637745034157326275
+    m_Hash: 4025997024
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -84,6 +84,7 @@ m_PackageAssets:
         - 3.2.11
         - 3.2.13
         - 3.2.14
+        - 3.2.15
         - 4.0.0
         - 4.0.1
         - 4.1.0
