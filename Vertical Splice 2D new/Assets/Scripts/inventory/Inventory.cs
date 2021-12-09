@@ -10,6 +10,7 @@ public class Inventory : Pickup
     public TextMeshProUGUI Slot1amount;
     public TextMeshProUGUI Slot2amount;
     public TextMeshProUGUI Slot3amount;
+    public TextMeshProUGUI Slot4amount;
     List<Image> Itemslots = new List<Image>();
 
     public Image Slot1;
@@ -24,9 +25,7 @@ public class Inventory : Pickup
     public Image Slot10;
     public Image Slot11;
     public Image Slot12;
-    public Image Slot13;
-    public Image Slot14;
-    public Image Slot15;
+
 
     [HideInInspector] public bool _Slot1Free = true;
     [HideInInspector] public bool _Slot2Free = true;
@@ -134,6 +133,19 @@ public class Inventory : Pickup
         else if (Slot3.sprite == stick)
         {
             Slot3amount.text = _Amount_stick.ToString();
+        }
+        
+        if (Slot4.sprite == grass)
+        {
+            Slot4amount.text = _Amount_grass.ToString();
+        }
+        else if (Slot4.sprite == rock)
+        {
+            Slot4amount.text = _Amount_rock.ToString();
+        }
+        else if (Slot4.sprite == stick)
+        {
+            Slot4amount.text = _Amount_stick.ToString();
         }
 
     }
@@ -391,18 +403,7 @@ public class Inventory : Pickup
                 _Slot12Free = false;
                 iconChecker.SlotsIconcheck(Slot12, ItemSprite);
                 break;
-            case 13:
-                _Slot13Free = false;
-                iconChecker.SlotsIconcheck(Slot13, ItemSprite);
-                break;
-            case 14:
-                _Slot14Free = false;
-                iconChecker.SlotsIconcheck(Slot14, ItemSprite);
-                break;
-            case 15:
-                _Slot15Free = false;
-                iconChecker.SlotsIconcheck(Slot15, ItemSprite);
-                break;
+
             default:
                 print("case out of bouns");
                 break;

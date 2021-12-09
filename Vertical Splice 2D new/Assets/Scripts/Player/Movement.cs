@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         gameObject.tag = "Player";
+        playerAnimation.Idle("W");
+
 
     }
 
@@ -43,16 +45,19 @@ public class Movement : MonoBehaviour
         //rechts
         if (Input.GetKey("a"))
         {
+            playerAnimation.AnimTrigger(true, "A");
             rb.velocity = new Vector3(playerSpeed, 0, 0);
         }
         //achter
         if (Input.GetKey("s"))
         {
+            playerAnimation.AnimTrigger(true, "S");
             rb.velocity = new Vector3(0, -0, playerSpeed);
         }
         //links
         if (Input.GetKey("d"))
         {
+            playerAnimation.AnimTrigger(true, "D");
             rb.velocity = new Vector3(-playerSpeed, 0, 0);
         }
 
@@ -61,7 +66,7 @@ public class Movement : MonoBehaviour
         //rechts boven
         if (Input.GetKey("w") && Input.GetKey("d"))
         {
-            playerAnimation.AnimTrigger(true, "W");
+            
             rb.velocity = new Vector3(-playerSpeed, 0, -playerSpeed);
         }
         //rechts beneden
@@ -72,7 +77,7 @@ public class Movement : MonoBehaviour
         //links boven
         if (Input.GetKey("w") && Input.GetKey("a"))
         {
-            playerAnimation.AnimTrigger(true, "W");
+            playerAnimation.AnimTrigger(true, "A");
             rb.velocity = new Vector3(playerSpeed, 0, -playerSpeed);
         }
         //links beneden
@@ -85,24 +90,28 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyUp("w"))
         {
-            playerAnimation.Idle();
+            playerAnimation.Idle("W");
             rb.velocity = new Vector3(0, 0, 0);
         }
 
         if (Input.GetKeyUp("a"))
         {
+            playerAnimation.Idle("A");
             rb.velocity = new Vector3(0, 0, 0);
         }
 
         if (Input.GetKeyUp("s"))
         {
+            playerAnimation.Idle("S");
             rb.velocity = new Vector3(0, 0, 0);
         }
 
         if (Input.GetKeyUp("d"))
         {
+            playerAnimation.Idle("D");
             rb.velocity = new Vector3(0, 0, 0);
         }
+        
         /*
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Player.Move(move * Time.deltaTime * -playerSpeed);

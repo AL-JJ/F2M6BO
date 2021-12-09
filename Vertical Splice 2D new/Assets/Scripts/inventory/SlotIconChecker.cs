@@ -23,9 +23,6 @@ public class SlotIconChecker : Inventory
         Items.Add(Slot10);
         Items.Add(Slot11);
         Items.Add(Slot12);
-        Items.Add(Slot13);
-        Items.Add(Slot14);
-        Items.Add(Slot15);
     }
     public void SlotsIconcheck( Image CurrentSlot,Sprite ItemSprite)
     {
