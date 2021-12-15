@@ -15,11 +15,19 @@ C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 56674
 Successfully changed project path to: C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
 C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 53.23 ms, found 6 plugins.
+=======
+50113
+Successfully changed project path to: D:/DATA/BO/periode 2/Github unity clone/F2M6BO/Vertical Slice 2D
+D:/DATA/BO/periode 2/Github unity clone/F2M6BO/Vertical Slice 2D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.09 ms, found 6 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -29,12 +37,18 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   
+<<<<<<< Updated upstream
     VRAM:     5980 MB
     Driver:   27.21.14.5763
+=======
+    VRAM:     5991 MB
+    Driver:   30.0.14.9709
+>>>>>>> Stashed changes
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -48,11 +62,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (588ms)
 		BeginReloadAssembly (56ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002431 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.97 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.545 seconds
+Domain Reload Profiling:
+	ReloadAssembly (545ms)
+		BeginReloadAssembly (58ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (460ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,12 +97,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (9ms)
 				ProcessInitializeOnLoadAttributes (83ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
+=======
+		EndReloadAssembly (417ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (158ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (8ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.004148 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -83,10 +130,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1124ms)
 		BeginReloadAssembly (149ms)
+=======
+Registered in 0.004291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.00 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1032ms)
+		BeginReloadAssembly (136ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (18ms)
 		EndReloadAssembly (916ms)
 			LoadAssemblies (90ms)
@@ -95,20 +155,39 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (55ms)
 			SetupLoadedEditorAssemblies (339ms)
+=======
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (837ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (321ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
+<<<<<<< Updated upstream
 				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (67ms)
 				ProcessInitializeOnLoadAttributes (196ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (5ms)
+=======
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+>>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
 Refreshing native plugins compatible for Editor in 0.52 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -118,6 +197,17 @@ System memory in use after: 100.0 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2710.
 Total: 3.138600 ms (FindLiveObjects: 0.266200 ms CreateObjectMapping: 0.113600 ms MarkObjects: 2.646000 ms  DeleteObjects: 0.111700 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2290 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.4 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2715.
+Total: 2.785000 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.092600 ms MarkObjects: 2.441400 ms  DeleteObjects: 0.059400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,6 +222,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   path: Assets
   artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.013386 seconds 
@@ -361,4 +452,35 @@ Received Import Request.
 Start importing Assets/character sprites/animated/Wilson opstaan Variant.prefab using Guid(5f5253c8769ea4c4b8234d69ad144fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5e0de94a6d286e1bd8e8fd6d1ce46e') in 0.026290 seconds 
   Import took 0.030548 seconds .
 
+=======
+  path: Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb
+  artifactKey: Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb using Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf09374a7e236a1cef6ee8914656efec') in 0.260395 seconds 
+  Import took 0.263812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.602358 seconds.
+  path: Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb
+  artifactKey: Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb using Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0dee7bd09273c15da2a8318b278bf0c') in 0.198997 seconds 
+  Import took 0.203196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 733.562126 seconds.
+  path: Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb
+  artifactKey: Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Dikke Flikke Slikke plopkaas ( wilson grab sprite).psb using Guid(45b8fa23c32225e448042126a0a95e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6926dc6f83b19b310171ef7586c028b') in 0.117886 seconds 
+  Import took 0.335897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 876.171134 seconds.
+  path: Assets/character sprites/animated/wilson front front Variant.prefab
+  artifactKey: Guid(6e5ca6bc9f543ea47b47db029b5e9b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/wilson front front Variant.prefab using Guid(6e5ca6bc9f543ea47b47db029b5e9b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f2ceb9b3b8b816c5fdedd071691e38') in 0.026471 seconds 
+  Import took 0.031187 seconds .
+
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
