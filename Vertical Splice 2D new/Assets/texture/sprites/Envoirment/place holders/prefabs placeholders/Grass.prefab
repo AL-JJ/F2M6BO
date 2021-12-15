@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6609637542345279782}
   - component: {fileID: 6609637542345279783}
   - component: {fileID: 6609637542345279779}
+  - component: {fileID: 7671830756015632335}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -108,8 +109,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.89121056, y: 1.700349, z: 0.45957002}
-  m_Center: {x: -0.0396986, y: -0.16017443, z: -0.12978502}
+  m_Size: {x: 0.89121056, y: 1.7424166, z: 1.00305}
+  m_Center: {x: -0.0396986, y: -0.18120825, z: -0.40152496}
 --- !u!114 &6609637542345279779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,3 +128,16 @@ MonoBehaviour:
   stick: {fileID: 21300000, guid: f3fa795860b14df4c9e5a9b7cbff4a19, type: 3}
   rock: {fileID: 21300000, guid: b209b51d9f5949644a52f16a153262b4, type: 3}
   grass: {fileID: 21300000, guid: e62f92d6f9a03f041b3d593c9016cce7, type: 3}
+--- !u!114 &7671830756015632335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609637542345279780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b29833a6ccd6d546a10c0731b9db208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Grass

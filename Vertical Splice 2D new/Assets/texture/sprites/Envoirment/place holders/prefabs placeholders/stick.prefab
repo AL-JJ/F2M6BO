@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6627484346058244212}
   - component: {fileID: 6627484346058244213}
   - component: {fileID: 6627484346058244210}
+  - component: {fileID: 6431051968154489899}
   m_Layer: 0
   m_Name: stick
   m_TagString: Untagged
@@ -113,8 +114,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0163269, y: 1.700349, z: 0.45957002}
-  m_Center: {x: 0.022859573, y: -0.16017443, z: -0.12978502}
+  m_Size: {x: 1.0163269, y: 1.9652504, z: 0.8263813}
+  m_Center: {x: 0.022859573, y: -0.29262513, z: -0.31319064}
 --- !u!114 &6627484346058244210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,3 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd3d4ba2374890489993850dc293cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6431051968154489899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627484346058244211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b29833a6ccd6d546a10c0731b9db208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Dead Bush
