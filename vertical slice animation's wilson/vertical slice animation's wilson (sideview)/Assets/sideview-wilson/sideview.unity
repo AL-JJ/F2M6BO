@@ -215,6 +215,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1328489554684125030, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 853792517818133147, guid: a7b2d23c56a7f324bb8622ed6c6755b9, type: 3}
+    - target: {fileID: 1328489554684125030, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1600764444778372921, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.88
@@ -339,10 +347,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5366772109927313957, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
+      propertyPath: m_labelHash
+      value: 31022802
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366772109927313957, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
+      propertyPath: m_CategoryHash
+      value: -9.271286e-22
+      objectReference: {fileID: 0}
     - target: {fileID: 7676281602242665752, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
       propertyPath: m_Name
       value: wilson front front Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7782415399439536924, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 444993360578727565, guid: a7b2d23c56a7f324bb8622ed6c6755b9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5ca6bc9f543ea47b47db029b5e9b49, type: 3}
 --- !u!1 &1348109654 stripped
