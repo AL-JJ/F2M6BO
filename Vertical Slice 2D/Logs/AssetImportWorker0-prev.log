@@ -1,0 +1,364 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 22000.318; Version 2009; 64bit' Language: 'en' Physical Memory: 16169 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56674
+Successfully changed project path to: C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
+C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 53.23 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/issi1/OneDrive/Bureaublad/Vertical slice/F2M6BO/Vertical Slice 2D/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5763
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001345 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.17 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.587 seconds
+Domain Reload Profiling:
+	ReloadAssembly (588ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (460ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (176ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 54.06 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1124ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (916ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2285 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.8 MB.
+System memory in use after: 100.0 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2710.
+Total: 3.138600 ms (FindLiveObjects: 0.266200 ms CreateObjectMapping: 0.113600 ms MarkObjects: 2.646000 ms  DeleteObjects: 0.111700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.013386 seconds 
+  Import took 0.016828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.311577 seconds.
+  path: Assets/character sprites/animated/wilson front front Variant.prefab
+  artifactKey: Guid(6e5ca6bc9f543ea47b47db029b5e9b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/wilson front front Variant.prefab using Guid(6e5ca6bc9f543ea47b47db029b5e9b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5813e61fbbe06e6a52b43bf6ec56aeb9') in 0.141318 seconds 
+  Import took 0.146639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009843 seconds.
+  path: Assets/character sprites/Wilson Back back.controller
+  artifactKey: Guid(1065c5dada6b02d43ae49bcdee0116ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson Back back.controller using Guid(1065c5dada6b02d43ae49bcdee0116ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a673ca7cebbaa8465942451c60963aef') in 0.015786 seconds 
+  Import took 0.019638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028125 seconds.
+  path: Assets/character sprites/Wilson opstaan.psb
+  artifactKey: Guid(535c12b748f0fd74e966f043729ca73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson opstaan.psb using Guid(535c12b748f0fd74e966f043729ca73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78094dd3916f2a4bf1fc136d0d3b47f3') in 0.229337 seconds 
+  Import took 0.233452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013897 seconds.
+  path: Assets/animations/front.wilson-walk cycle.anim
+  artifactKey: Guid(e96e115f835dbf242a1bf1737d4be28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/front.wilson-walk cycle.anim using Guid(e96e115f835dbf242a1bf1737d4be28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42d6d8d99febb79c0b5ca3f3afd72ae') in 0.014398 seconds 
+  Import took 0.018144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014692 seconds.
+  path: Assets/character sprites/animated/Wilson Back back Variant.prefab
+  artifactKey: Guid(400cb354f4f05b14aae17cdb31f4d67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/Wilson Back back Variant.prefab using Guid(400cb354f4f05b14aae17cdb31f4d67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07ecae5c74badf0d27697d327168a5a') in 0.027171 seconds 
+  Import took 0.031533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009219 seconds.
+  path: Assets/animations
+  artifactKey: Guid(475b72a64b19dc345a21371a14f0c60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations using Guid(475b72a64b19dc345a21371a14f0c60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ffd5979138b96700f2b8f9cc9a9e76') in 0.008085 seconds 
+  Import took 0.011943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007813 seconds.
+  path: Assets/character sprites
+  artifactKey: Guid(c4fd9959dc17c254cab3ec0274940550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites using Guid(c4fd9959dc17c254cab3ec0274940550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd962bff1e9fab8f7f3d2a797888ce98') in 0.007654 seconds 
+  Import took 0.011459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008606 seconds.
+  path: Assets/character sprites/Wilson Back back 2.controller
+  artifactKey: Guid(e5fb464f9add7b241985a87defc0b2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson Back back 2.controller using Guid(e5fb464f9add7b241985a87defc0b2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08fa6e4388a47a7d610dda9738297aa') in 0.015047 seconds 
+  Import took 0.019623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007914 seconds.
+  path: Assets/character sprites/Wilson opstaan.controller
+  artifactKey: Guid(23212bea842d96f468981fa410996021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson opstaan.controller using Guid(23212bea842d96f468981fa410996021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67267008c059f6772d785f5a2f5903d4') in 0.009628 seconds 
+  Import took 0.013400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007361 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(7538ec92f384420488c55fc8c6b93076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(7538ec92f384420488c55fc8c6b93076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc70de0a01dfa21eb97ae8d3863cb192') in 0.007242 seconds 
+  Import took 0.010910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008120 seconds.
+  path: Assets/animations/wilson front front 1.controller
+  artifactKey: Guid(61fec1a4a999cd548869ff1d92f5646f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/wilson front front 1.controller using Guid(61fec1a4a999cd548869ff1d92f5646f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc90abbc0a76cf91a2cf699d4133d59') in 0.013360 seconds 
+  Import took 0.017090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007694 seconds.
+  path: Assets/Scenes/wilson front animation.unity
+  artifactKey: Guid(2fefdac04df5d4542922fb7db9f0df11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/wilson front animation.unity using Guid(2fefdac04df5d4542922fb7db9f0df11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5541bff253ffde84124b73e92f82d485') in 0.009356 seconds 
+  Import took 0.012997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008008 seconds.
+  path: Assets/animations/wilson front front 2.controller
+  artifactKey: Guid(8614a295d0ad3454e9cec015d18a5ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/wilson front front 2.controller using Guid(8614a295d0ad3454e9cec015d18a5ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e56057c01174fec649a69f8bf785887') in 0.007873 seconds 
+  Import took 0.011617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029262 seconds.
+  path: Assets/character sprites/wilson front front.psb
+  artifactKey: Guid(a7b2d23c56a7f324bb8622ed6c6755b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/wilson front front.psb using Guid(a7b2d23c56a7f324bb8622ed6c6755b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b953c884ecf309fea96fce4cc49aeda') in 0.149346 seconds 
+  Import took 0.153446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013664 seconds.
+  path: Assets/animations/wilson front front.controller
+  artifactKey: Guid(5c05c6e0cd556f64294d6e9c0eacc382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/wilson front front.controller using Guid(5c05c6e0cd556f64294d6e9c0eacc382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ba6d978edd3f67bf4eb437631cff92') in 0.002930 seconds 
+  Import took 0.006472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007847 seconds.
+  path: Assets/character sprites/Wilson Back back 1.controller
+  artifactKey: Guid(bb7544e76fb32b246a5362f49a99925c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson Back back 1.controller using Guid(bb7544e76fb32b246a5362f49a99925c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac79ba2dde62bf4a5c93b22309df2a55') in 0.013004 seconds 
+  Import took 0.016684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030432 seconds.
+  path: Assets/character sprites/Wilson Back back.psb
+  artifactKey: Guid(83e6caaddb3a9984d9ac557e3ce4aec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/Wilson Back back.psb using Guid(83e6caaddb3a9984d9ac557e3ce4aec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f41c3c1f9910e611f72f117df980bd8f') in 0.145631 seconds 
+  Import took 0.149510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014023 seconds.
+  path: Assets/character sprites/animated/wilson back idle animation.anim
+  artifactKey: Guid(49252154f383b884c89515d22ac14835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/wilson back idle animation.anim using Guid(49252154f383b884c89515d22ac14835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d3c1eab07bc7e29a7b3def265bd0b3') in 0.008815 seconds 
+  Import took 0.012391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008141 seconds.
+  path: Assets/animations/linker hand.controller
+  artifactKey: Guid(8d8b1cb21d3e44f43aa1b87f74782a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/linker hand.controller using Guid(8d8b1cb21d3e44f43aa1b87f74782a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12192c4c21c4ccedb6bc595465e2ca06') in 0.009846 seconds 
+  Import took 0.013451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007883 seconds.
+  path: Assets/character sprites/animated/Wilson Back back.controller
+  artifactKey: Guid(5c0a51680c0b102449e5b3f2750681d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/Wilson Back back.controller using Guid(5c0a51680c0b102449e5b3f2750681d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff214e85437ca3e126dd5fd1b364261a') in 0.004284 seconds 
+  Import took 0.007978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008672 seconds.
+  path: Assets/character sprites/animated/Wilson backview loop animatie.anim
+  artifactKey: Guid(6420da10fb69f6b4f94bc9618ece1868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/Wilson backview loop animatie.anim using Guid(6420da10fb69f6b4f94bc9618ece1868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf723bcbf5ade857ffa1028a7e6ca36e') in 0.008277 seconds 
+  Import took 0.012022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007968 seconds.
+  path: Assets/animations/bone_12.controller
+  artifactKey: Guid(f29c9ceb2455446428ce2fe4e5088930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/bone_12.controller using Guid(f29c9ceb2455446428ce2fe4e5088930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdfbdfd82cf16bb0729ace1c481ad01') in 0.012826 seconds 
+  Import took 0.016533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007884 seconds.
+  path: Assets/character sprites/animated/wilson front idle.anim
+  artifactKey: Guid(7c5c1442f2bfaa142aa23c5390838976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/wilson front idle.anim using Guid(7c5c1442f2bfaa142aa23c5390838976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9d4ffd9aa43fef3d4fbe2168f6bf14') in 0.008603 seconds 
+  Import took 0.012227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007972 seconds.
+  path: Assets/animations/wilson front front 3.controller
+  artifactKey: Guid(8fb3275f812d160408b5957691fbad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/wilson front front 3.controller using Guid(8fb3275f812d160408b5957691fbad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360aca48a9430beee29e4f7fdf21b8ab') in 0.014296 seconds 
+  Import took 0.018083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007541 seconds.
+  path: Assets/character sprites/animated/Wilson Back back 1.controller
+  artifactKey: Guid(a76b6767f64356c44a11fc6193248548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/Wilson Back back 1.controller using Guid(a76b6767f64356c44a11fc6193248548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad48cb729d222b23820b3b755fa75bd') in 0.003453 seconds 
+  Import took 0.007228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008617 seconds.
+  path: Assets/character sprites/animated
+  artifactKey: Guid(87d7796ede1c5b84f8589ece2048ab3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated using Guid(87d7796ede1c5b84f8589ece2048ab3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b729fc0291d64ca0d16840a24157a55') in 0.006905 seconds 
+  Import took 0.010408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008186 seconds.
+  path: Assets/character sprites/willson backiew loop animatie.anim
+  artifactKey: Guid(4eba9642271edf3409268b1a62c57342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/willson backiew loop animatie.anim using Guid(4eba9642271edf3409268b1a62c57342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adeb97b170c178348e700d38b15205c') in 0.012749 seconds 
+  Import took 0.016472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014218 seconds.
+  path: Assets/character sprites/animated/Wilson opstaan Variant.prefab
+  artifactKey: Guid(5f5253c8769ea4c4b8234d69ad144fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/character sprites/animated/Wilson opstaan Variant.prefab using Guid(5f5253c8769ea4c4b8234d69ad144fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5e0de94a6d286e1bd8e8fd6d1ce46e') in 0.026290 seconds 
+  Import took 0.030548 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
