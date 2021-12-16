@@ -65,7 +65,6 @@ public class Pickup : MonoBehaviour
         if (other.tag == "Player")
         {
             inrange = true;
-            print("player in range");
         }
     }
 
@@ -73,7 +72,6 @@ public class Pickup : MonoBehaviour
     private void OnTriggerExit(Collider collision)
     {
         inrange = false;
-        print("player not in range");
     }
 
 }

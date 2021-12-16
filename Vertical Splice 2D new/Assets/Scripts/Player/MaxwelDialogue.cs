@@ -16,7 +16,6 @@ public class MaxwelDialogue : MonoBehaviour
 
     public void LineOne()
     {
-        print("triggered");
         dialoguebox.text = "Say Pal, you don't look so good";
         timer = 5;
         _LineOneDone = true;
@@ -24,7 +23,6 @@ public class MaxwelDialogue : MonoBehaviour
     }
     public void LineTwo()
     {
-        print("triggeredtwo");
         dialoguebox.text = "You'd better find something to eat before night comes!";
         timer = 5;
         _LineTwoDone = true;

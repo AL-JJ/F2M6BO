@@ -3,10 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SlotIconChecker : Inventory
+public class SlotIconChecker : MonoBehaviour
 {
     List<Image> Items = new List<Image>();
-
+    public Image Slot1;
+    public Image Slot2;
+    public Image Slot3;
+    public Image Slot4;
+    public Image Slot5;
+    public Image Slot6;
+    public Image Slot7;
+    public Image Slot8;
+    public Image Slot9;
+    public Image Slot10;
+    public Image Slot11;
+    public Image Slot12;
     //check elke slot voor welke items er zijn
     public void AllSlots()
     {
@@ -39,6 +50,7 @@ public class SlotIconChecker : Inventory
             {
 
                 CurrentSlot.sprite = ItemSprite;
+               
                 break;
             }
         }
