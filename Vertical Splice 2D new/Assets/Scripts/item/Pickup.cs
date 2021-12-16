@@ -9,20 +9,36 @@ public class Pickup : MonoBehaviour
     private bool inrange = false;
 
     //drop down menu
+
+       
+    
     public MyEnum ItemType = new MyEnum();
     public enum MyEnum
     {
         Grass,
         Stick,
-        Rock
+        Rock,
+        Berries,
+        Flower
     };
-    public Sprite stick;
-    public Sprite rock;
-    public Sprite grass;
+    [HideInInspector] public Sprite stick;
+    [HideInInspector] public Sprite rock;
+    [HideInInspector] public Sprite grass;
+    [HideInInspector] public Sprite berries;
+    [HideInInspector] public Sprite flower;
 
 
     private void Update()
     {
+        //find inventory script
+        try
+        {
+            inv = GameObject.Find("UI").GetComponent<Inventory>();
+        }
+        catch
+        {
+            //ignore this dit is puur zodat je geen error spam krijg totdat de cutscene klaar is
+        }
         if (inrange == true && Input.GetKey("space"))
         {
             if (ItemType == MyEnum.Grass)
@@ -37,6 +53,27 @@ public class Pickup : MonoBehaviour
                 inv.UpdateAmount();
                 Destroy(gameObject);
             }
+            else if(ItemType == MyEnum.Rock)
+            {
+                RockPickUp();
+                inv.UpdateAmount();
+                Destroy(gameObject);
+            }
+            else if(ItemType == MyEnum.Berries)
+            {
+                BerriesPickUp();
+                //Vector3 spawn = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+                //Instantiate(berryBushEmpty, spawn, Quaternion.identity,ParentforBush.transform);
+                inv.UpdateAmount();
+                Destroy(gameObject);
+            }
+            else if(ItemType == MyEnum.Flower)
+            {
+                FlowerPickup();
+                inv.UpdateAmount();
+                Destroy(gameObject);
+            }
+
         }
     }
 
@@ -45,6 +82,16 @@ public class Pickup : MonoBehaviour
     {
         inv.PickUpLimit("Grass");
         inv.Additem("Grass", grass);
+    }
+    public void BerriesPickUp()
+    {
+        inv.PickUpLimit("Berries");
+        inv.Additem("Berries", berries);
+    }
+    public void FlowerPickup()
+    {
+        inv.PickUpLimit("Flower");
+        inv.Additem("Flower", flower);
     }
 
     public void RockPickUp()

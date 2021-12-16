@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1142658659}
   - component: {fileID: 1142658660}
   - component: {fileID: 1142658663}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: big tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,8 +189,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.59576416, y: 2.9012141, z: 1}
-  m_Center: {x: 0.062992096, y: 1.3470576, z: 0}
+  m_Size: {x: 1.61097, y: 2.9012141, z: 1}
+  m_Center: {x: -0.025592089, y: 1.3470576, z: 0}
 --- !u!114 &1142658660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +318,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 20
   m_Sprite: {fileID: -4005880826262727307, guid: b6b1ef61175377943805a04bc2b386f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   - {fileID: 832224299026815141}
   - {fileID: 6026149016624032319}
   m_Bounds:
-    m_Center: {x: 0.00068986416, y: -0.010229111, z: 0}
-    m_Extent: {x: 1.2765799, y: 1.8447709, z: 0}
+    m_Center: {x: 0.0006902218, y: -0.010229111, z: 0}
+    m_Extent: {x: 1.2765801, y: 1.8447709, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

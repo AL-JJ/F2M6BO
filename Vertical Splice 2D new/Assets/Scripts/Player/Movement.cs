@@ -39,6 +39,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+       
         if (canMove == true)
         {
             if (Input.GetKey("w"))

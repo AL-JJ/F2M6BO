@@ -9,7 +9,6 @@ public class FreeSlot : MonoBehaviour
     {
         if (GetComponent<Image>().sprite != null)
         {
-            print("false");
             return false;
             
         }

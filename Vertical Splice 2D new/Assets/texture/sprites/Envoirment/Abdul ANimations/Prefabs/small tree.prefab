@@ -101,7 +101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 20
   m_Sprite: {fileID: 8812408769871359950, guid: dce17849fc9d6d043bec1c0d64e08d16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   - {fileID: 6613130502049195648}
   - {fileID: 2105278716101103543}
   m_Bounds:
-    m_Center: {x: 0.15861219, y: -0.118842244, z: 0}
+    m_Center: {x: 0.15861028, y: -0.118842244, z: 0}
     m_Extent: {x: 0.53868914, y: 1.5086292, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1092206129}
   - component: {fileID: 1092206127}
   - component: {fileID: 1092206128}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: small tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,8 +297,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22576904, y: 2.8888326, z: 0.532254}
-  m_Center: {x: 0.21362114, y: 0.9444163, z: 0.23387301}
+  m_Size: {x: 0.84106827, y: 2.9398305, z: 0.532254}
+  m_Center: {x: 0.1867199, y: 0.9699153, z: 0.23387301}
 --- !u!114 &1092206127
 MonoBehaviour:
   m_ObjectHideFlags: 0

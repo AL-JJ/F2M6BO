@@ -11,6 +11,7 @@ public class Inventory : Pickup
     public TextMeshProUGUI Slot2amount;
     public TextMeshProUGUI Slot3amount;
     public TextMeshProUGUI Slot4amount;
+    public TextMeshProUGUI Slot5amount;
     List<Image> Itemslots = new List<Image>();
 
     public Image Slot1;
@@ -59,29 +60,20 @@ public class Inventory : Pickup
     [HideInInspector] public bool _Slot14Free = true;
     [HideInInspector] public bool _Slot15Free = true;
     
-    //[HideInInspector] public string[,] slots = new string[12,40];
+
     
 
 
     [HideInInspector] public int _Amount_grass;
     [HideInInspector] public int _Amount_stick;
     [HideInInspector] public int _Amount_rock;
+    [HideInInspector] public int _Amount_Berries;
+    [HideInInspector] public int _Amount_Flowers;
 
 
-    /*private void Start()
-    {
-        int[] countItems = new int[] { 0, 0, 0 };//0==grass , 1 == rock, 2 == stick
-
-
-        IDictionary<string, int> itemNumbers = new Dictionary<string, int>();
-        itemNumbers.Add("Grass", 0); //adding a key/value using the Add() method
-        itemNumbers.Add("Rock", 1);
-        itemNumbers.Add("Stick", 2);
-    }*/
 
     private void Update()
     {
-        print("hallo"); 
         _Slot1Free = Slot1OB.SlotFree();
         _Slot2Free = Slot2OB.SlotFree();
         _Slot3Free = Slot3OB.SlotFree();
@@ -133,6 +125,28 @@ public class Inventory : Pickup
                     print("max rock");
                 }
                 break;
+            case "Flower":
+                if (_Amount_Flowers < 40)
+                {
+                    _Amount_Flowers++;
+                }
+                else if (_Amount_Flowers >= 40)
+                {
+                    //display error msg
+                    print("max Flowers");
+                }
+                break;
+            case "Berries":
+                if (_Amount_Berries < 40)
+                {
+                    _Amount_Berries++;
+                }
+                else if (_Amount_Berries >= 40)
+                {
+                    //display error msg
+                    print("max Flowers");
+                }
+                break;
         }
     }
 
@@ -152,6 +166,15 @@ public class Inventory : Pickup
         {
             Slot1amount.text = _Amount_stick.ToString();
         }
+        else if(Slot1.sprite == flower)
+        {
+            Slot1amount.text = _Amount_Flowers.ToString();
+        }
+        else if (Slot1.sprite == berries)
+        {
+            Slot1amount.text = _Amount_Berries.ToString();
+        }
+
 
         if (Slot2.sprite == grass)
         {
@@ -165,6 +188,15 @@ public class Inventory : Pickup
         {
             Slot2amount.text = _Amount_stick.ToString();
         }
+        else if(Slot2.sprite == flower)
+        {
+            Slot2amount.text = _Amount_Flowers.ToString();
+        }
+        else if (Slot2.sprite == berries)
+        {
+            Slot2amount.text = _Amount_Berries.ToString();
+        }
+
 
         if (Slot3.sprite == grass)
         {
@@ -178,7 +210,16 @@ public class Inventory : Pickup
         {
             Slot3amount.text = _Amount_stick.ToString();
         }
-        
+        else if(Slot3.sprite == flower)
+        {
+            Slot3amount.text = _Amount_Flowers.ToString();
+        }
+        else if (Slot3.sprite == berries)
+        {
+            Slot3amount.text = _Amount_Berries.ToString();
+        }
+
+
         if (Slot4.sprite == grass)
         {
             Slot4amount.text = _Amount_grass.ToString();
@@ -191,288 +232,301 @@ public class Inventory : Pickup
         {
             Slot4amount.text = _Amount_stick.ToString();
         }
+        else if(Slot4.sprite == flower)
+        {
+            Slot4amount.text = _Amount_Flowers.ToString();
+        }
+        else if (Slot4.sprite == berries)
+        {
+            Slot4amount.text = _Amount_Berries.ToString();
+        }
+
+
+        if (Slot5.sprite == grass)
+        {
+            Slot5amount.text = _Amount_grass.ToString();
+        }
+        else if (Slot5.sprite == rock)
+        {
+            Slot5amount.text = _Amount_rock.ToString();
+        }
+        else if (Slot5.sprite == stick)
+        {
+            Slot5amount.text = _Amount_stick.ToString();
+        }
+        else if (Slot5.sprite == flower)
+        {
+            Slot5amount.text = _Amount_Flowers.ToString();
+        }
+        else if (Slot5.sprite == berries)
+        {
+            Slot5amount.text = _Amount_Berries.ToString();
+        }
 
     }
 
     public void Additem(string ItemName, Sprite ItemSprite)
     {
-
-
-
-
-
-        /*
-        for (int i = 0; i < slots.GetLength(0); i++)
-        {
-
-            //er is nog geen string met deze waarde
-            if (countItems[itemNumbers[ItemName]] == 0)
-            {
-                //check eerste lege slot
-                if (slots[i, 0] == null)
-                {
-                    //voeg item string toe
-                    slots[i, 0] = ItemName;
-                    countItems[itemNumbers[ItemName]]++; // houd bij in countitems
-                }
-
-            }
-            else if (slots[i, 0] == ItemName)//zit in de juiste kolom
-            {
-                for (int j = 0; j < slots.GetLength(1); j++)
-                {
-                    if (slots[i, j] == null) { //eerste lege plek gevonden in kolom
-                        slots[i, j] = ItemName;
-                        countItems[itemNumbers[ItemName]]++;
-                        break;
-                    }
-                }
-
-
-            }
-            else {
-                //check volgende kolom
-                continue;
-            }
-
-
-
-            for (int k = 0; k < slots.GetLength(0); k++)
-            {
-                for (int l = 0; l < slots.GetLength(1); l++)
-                {
-                    Debug.Log(slots[k, l]);
-                }
-            }*/
                 
 
                 switch (ItemName)
                 {
-                case "Grass":
+                    case "Grass":
 
 
-                if (_Slot1Free == true)
-                {
-                    SlotCheck(1, ItemSprite);
-                }
-                else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot2Free == true)
-                {
-                    SlotCheck(2, ItemSprite);
-                }
-                else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot3Free == true)
-                {
-                    SlotCheck(3, ItemSprite);
-                }
-                else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot4Free == true)
-                {
-                    SlotCheck(4, ItemSprite);
-                }
-                else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot5Free == true)
-                    {
-                        SlotCheck(5, ItemSprite);
-                    }
-                    else if (_Slot6Free == true)
-                    {
-                        SlotCheck(6, ItemSprite);
-                    }
-                    else if (_Slot7Free == true)
-                    {
-                        SlotCheck(7, ItemSprite);
-                    }
-                    else if (_Slot8Free == true)
-                    {
-                        SlotCheck(8, ItemSprite);
-                    }
-                    else if(_Slot9Free == true)
-                    {
-                        SlotCheck(9, ItemSprite);
-                    }
-                    else if(_Slot10Free == true)
-                    {
-                        SlotCheck(10, ItemSprite);
-                    }
-                    else if (_Slot11Free == true)
-                    {
-                        SlotCheck(11, ItemSprite);
-                    }
-                    else if (_Slot12Free == true)
-                    {
-                        SlotCheck(12, ItemSprite);
-                    }
-                   
-                    else
-                    {
-                        UpdateAmount();
-                    }
-
-
-                    break;
-
-                case "Rock":
-                if (_Slot1Free == true)
-                {
-                    SlotCheck(1, ItemSprite);
-                }
-                else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot2Free == true)
-                {
-                    SlotCheck(2, ItemSprite);
-                }
-                else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot3Free == true)
-                {
-                    SlotCheck(3, ItemSprite);
-                }
-                else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot4Free == true)
-                {
-                    SlotCheck(4, ItemSprite);
-                }
-                else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
-                {
-                    UpdateAmount();
-                }
-                else if (_Slot5Free == true)
-                    {
-                        SlotCheck(5, ItemSprite);
-                    }
-                    else if (_Slot6Free == true)
-                    {
-                        SlotCheck(6, ItemSprite);
-                    }
-                    else if (_Slot7Free == true)
-                    {
-                        SlotCheck(7, ItemSprite);
-                    }
-                    else if (_Slot8Free == true)
-                    {
-                        SlotCheck(8, ItemSprite);
-                    }
-                    else if (_Slot9Free == true)
-                    {
-                        SlotCheck(9, ItemSprite);
-                    }
-                    else if (_Slot10Free == true)
-                    {
-                        SlotCheck(10, ItemSprite);
-                    }
-                    else if (_Slot11Free == true)
-                    {
-                        SlotCheck(11, ItemSprite);
-                    }
-                    else if (_Slot12Free == true)
-                    {
-                        SlotCheck(12, ItemSprite);
-                    }
-                    else
-                    {
-                        UpdateAmount();
-                    }
-
-                    break;
-
-
-                case "Stick":
-                    if (_Slot1Free == true)
-                    {
-                        SlotCheck(1, ItemSprite);
-                    }
-                    else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
-                    {
-                         UpdateAmount();
-                    }
-                    else if (_Slot2Free == true)
-                    {
-                        SlotCheck(2, ItemSprite);
-                    }
-                    else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
-                    {
-                        UpdateAmount();
-                    }
-                    else if (_Slot3Free == true)
+                        if (_Slot1Free == true)
+                        {
+                            SlotCheck(1, ItemSprite);
+                        }
+                        else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot2Free == true)
+                        {
+                            SlotCheck(2, ItemSprite);
+                        }
+                        else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot3Free == true)
                         {
                             SlotCheck(3, ItemSprite);
                         }
-                    else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
-                    {
-                        UpdateAmount();
+                        else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot4Free == true)
+                        {
+                            SlotCheck(4, ItemSprite);
+                        }
+                        else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot5Free == true)
+                            {
+                                SlotCheck(5, ItemSprite);
+                            }
+                        else if(_Slot5Free == false && Slot5.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
                     }
-                    else if (_Slot4Free == true)
-                    {
-                        SlotCheck(4, ItemSprite);
-                    }
-                    else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
-                    {
-                        UpdateAmount();
-                    }
-                    else if (_Slot5Free == true)
-                    {
-                        SlotCheck(5, ItemSprite);
-                    }
-                    else if (_Slot6Free == true)
-                    {
-                        SlotCheck(6, ItemSprite);
-                    }
-                    else if (_Slot7Free == true)
-                    {
-                        SlotCheck(7, ItemSprite);
-                    }
-                    else if (_Slot8Free == true)
-                    {
-                        SlotCheck(8, ItemSprite);
-                    }
-                    else if (_Slot9Free == true)
-                    {
-                        SlotCheck(9, ItemSprite);
-                    }
-                    else if (_Slot10Free == true)
-                    {
-                        SlotCheck(10, ItemSprite);
-                    }
-                    else if (_Slot11Free == true)
-                    {
-                        SlotCheck(11, ItemSprite);
-                    }
-                    else if (_Slot12Free == true)
-                    {
-                        SlotCheck(12, ItemSprite);
-                    }
-                    else
-                    {
-                        UpdateAmount();
-                    }
-                    break;
-                default:
-                    UpdateAmount();
+                    //incase het er meer items komen
+                    /*
+                        else if (_Slot6Free == true)
+                        {
+                            SlotCheck(6, ItemSprite);
+                        }
+                        else if (_Slot7Free == true)
+                        {
+                            SlotCheck(7, ItemSprite);
+                        }
+                        else if (_Slot8Free == true)
+                        {
+                            SlotCheck(8, ItemSprite);
+                        }
+                        else if(_Slot9Free == true)
+                        {
+                            SlotCheck(9, ItemSprite);
+                        }
+                        else if(_Slot10Free == true)
+                        {
+                            SlotCheck(10, ItemSprite);
+                        }
+                        else if (_Slot11Free == true)
+                        {
+                            SlotCheck(11, ItemSprite);
+                        }
+                        else if (_Slot12Free == true)
+                        {
+                            SlotCheck(12, ItemSprite);
+                        }
+                   
+                        else
+                        {
+                            UpdateAmount();
+                        }
+                    */
+
+                        break;
+
+                    case "Rock":
+                        if (_Slot1Free == true)
+                        {
+                            SlotCheck(1, ItemSprite);
+                        }
+                        else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot2Free == true)
+                        {
+                            SlotCheck(2, ItemSprite);
+                        }
+                        else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot3Free == true)
+                        {
+                            SlotCheck(3, ItemSprite);
+                        }
+                        else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot4Free == true)
+                        {
+                            SlotCheck(4, ItemSprite);
+                        }
+                        else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot5Free == true)
+                        {
+                            SlotCheck(5, ItemSprite);
+                        }
+                        else if (_Slot5Free == false && Slot5.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
                     break;
 
-            
-    }
+
+                    case "Stick":
+                        if (_Slot1Free == true)
+                        {
+                            SlotCheck(1, ItemSprite);
+                        }
+                        else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot2Free == true)
+                        {
+                            SlotCheck(2, ItemSprite);
+                        }
+                        else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot3Free == true)
+                        {
+                            SlotCheck(3, ItemSprite);
+                        }
+                        else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot4Free == true)
+                        {
+                            SlotCheck(4, ItemSprite);
+                        }
+                        else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot5Free == true)
+                        {
+                            SlotCheck(5, ItemSprite);
+                        }
+                        else if (_Slot5Free == false && Slot5.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+
+                     break;
+                    case "Flower":
+                        if (_Slot1Free == true)
+                        {
+                            SlotCheck(1, ItemSprite);
+                        }
+                        else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot2Free == true)
+                        {
+                            SlotCheck(2, ItemSprite);
+                        }
+                        else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot3Free == true)
+                        {
+                            SlotCheck(3, ItemSprite);
+                        }
+                        else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot4Free == true)
+                        {
+                            SlotCheck(4, ItemSprite);
+                        }
+                        else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot5Free == true)
+                        {
+                            SlotCheck(5, ItemSprite);
+                        }
+                        else if (_Slot5Free == false && Slot5.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        break;
+                    case "Berries":
+                        if (_Slot1Free == true)
+                        {
+                            SlotCheck(1, ItemSprite);
+                        }
+                        else if (_Slot1Free == false && Slot1.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot2Free == true)
+                        {
+                            SlotCheck(2, ItemSprite);
+                        }
+                        else if (_Slot2Free == false && Slot2.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot3Free == true)
+                        {
+                            SlotCheck(3, ItemSprite);
+                        }
+                        else if (_Slot3Free == false && Slot3.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot4Free == true)
+                        {
+                            SlotCheck(4, ItemSprite);
+                        }
+                        else if (_Slot4Free == false && Slot4.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        else if (_Slot5Free == true)
+                        {
+                            SlotCheck(5, ItemSprite);
+                        }
+                        else if (_Slot5Free == false && Slot5.sprite == ItemSprite)
+                        {
+                            UpdateAmount();
+                        }
+                        break;
+
+
+        }
 
 }
     
@@ -568,7 +622,7 @@ public class Inventory : Pickup
         }
         if (_Slot4Free == true)
         {
-            if (Slot1.sprite != ItemSprite && Slot2.sprite != ItemSprite && Slot3.sprite != ItemSprite && Slot4.sprite != ItemSprite && Slot5.sprite != ItemSprite && Slot6.sprite != ItemSprite && Slot7.sprite != ItemSprite && Slot8.sprite && Slot9.sprite != ItemSprite && Slot10.sprite != ItemSprite && Slot11.sprite != ItemSprite && Slot12.sprite != ItemSprite)
+            if (Slot1.sprite != ItemSprite && Slot2.sprite != ItemSprite && Slot3.sprite != ItemSprite  && Slot5.sprite != ItemSprite && Slot6.sprite != ItemSprite && Slot7.sprite != ItemSprite && Slot8.sprite && Slot9.sprite != ItemSprite && Slot10.sprite != ItemSprite && Slot11.sprite != ItemSprite && Slot12.sprite != ItemSprite)
             {
                // _Slot1Free = false;
                 iconChecker.SlotsIconcheck(Slot1, ItemSprite);
@@ -577,6 +631,11 @@ public class Inventory : Pickup
         if(_Slot5Free == true)
         {
 
+            if (Slot1.sprite != ItemSprite && Slot2.sprite != ItemSprite && Slot3.sprite != ItemSprite && Slot4.sprite != ItemSprite  && Slot6.sprite != ItemSprite && Slot7.sprite != ItemSprite && Slot8.sprite && Slot9.sprite != ItemSprite && Slot10.sprite != ItemSprite && Slot11.sprite != ItemSprite && Slot12.sprite != ItemSprite)
+            {
+                // _Slot1Free = false;
+                iconChecker.SlotsIconcheck(Slot5, ItemSprite);
+            }
         } 
     }
 }
