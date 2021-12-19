@@ -176,9 +176,9 @@ GameObject:
   - component: {fileID: 6301673465768438020}
   - component: {fileID: 6550919384172495939}
   - component: {fileID: 6118157746484787648}
-  - component: {fileID: 2921229422787281927}
   - component: {fileID: 5826484730223705759}
   - component: {fileID: 8237871733424052}
+  - component: {fileID: 2646133693209866131}
   m_Layer: 0
   m_Name: berry bush full
   m_TagString: Untagged
@@ -234,25 +234,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 1.92, z: 1.36}
   m_Center: {x: 0.47, y: 0.54, z: 0}
---- !u!114 &2921229422787281927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752502928184034682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81198f9afa9ca9f438df8fab7ca5b2b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inv: {fileID: 0}
-  ItemType: 3
-  stick: {fileID: 21300000, guid: f3fa795860b14df4c9e5a9b7cbff4a19, type: 3}
-  rock: {fileID: 21300000, guid: ce931ca65f27b6a46b7845f0f4b04b78, type: 3}
-  grass: {fileID: 21300000, guid: e62f92d6f9a03f041b3d593c9016cce7, type: 3}
-  berries: {fileID: 21300000, guid: c1412b99c43365144a7f1930e1cd8c4a, type: 3}
-  flower: {fileID: 21300000, guid: 1f38dc6d8f63ddb48983b7726f86a89f, type: 3}
 --- !u!114 &5826484730223705759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,3 +259,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipToShow: Berry Bush(full)
+--- !u!114 &2646133693209866131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752502928184034682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485bb83fc053e364ba3cf080fe07dd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: {fileID: 0}
+  ItemType: 3
+  stick: {fileID: 0}
+  rock: {fileID: 0}
+  grass: {fileID: 0}
+  berries: {fileID: 0}
+  flower: {fileID: 0}
+  animatorWalkUp: {fileID: 0}
+  animatorWalkLeft: {fileID: 0}
+  animatorWalkRight: {fileID: 0}
+  animatorWalkDown: {fileID: 0}
+  movement: {fileID: 0}

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 705455359512530989}
   - component: {fileID: 705455359512530984}
   - component: {fileID: 705455359512530985}
-  - component: {fileID: 705455359512530986}
   - component: {fileID: 705455359512530987}
   - component: {fileID: 705455359512530988}
+  - component: {fileID: 1450946608462099129}
   m_Layer: 0
   m_Name: Flint
   m_TagString: Untagged
@@ -98,25 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd3d4ba2374890489993850dc293cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &705455359512530986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705455359512530990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81198f9afa9ca9f438df8fab7ca5b2b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inv: {fileID: 0}
-  ItemType: 2
-  stick: {fileID: 21300000, guid: f3fa795860b14df4c9e5a9b7cbff4a19, type: 3}
-  rock: {fileID: 21300000, guid: ce931ca65f27b6a46b7845f0f4b04b78, type: 3}
-  grass: {fileID: 21300000, guid: e62f92d6f9a03f041b3d593c9016cce7, type: 3}
-  Berries: {fileID: 21300000, guid: c1412b99c43365144a7f1930e1cd8c4a, type: 3}
-  flower: {fileID: 21300000, guid: 1f38dc6d8f63ddb48983b7726f86a89f, type: 3}
 --- !u!114 &705455359512530987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +124,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.522739, y: 10.018926, z: 4.883744}
   m_Center: {x: -0.09477113, y: -1.5176604, z: -0.7570105}
+--- !u!114 &1450946608462099129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705455359512530990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485bb83fc053e364ba3cf080fe07dd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: {fileID: 0}
+  ItemType: 2
+  stick: {fileID: 0}
+  rock: {fileID: 0}
+  grass: {fileID: 0}
+  berries: {fileID: 0}
+  flower: {fileID: 0}
+  animatorWalkUp: {fileID: 0}
+  animatorWalkLeft: {fileID: 0}
+  animatorWalkRight: {fileID: 0}
+  animatorWalkDown: {fileID: 0}
+  movement: {fileID: 0}

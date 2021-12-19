@@ -7,13 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3272758868646030437, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
+      propertyPath: ItemType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030439, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 20abb09f71a89ad4d833f6722b8d0ac5, type: 3}
     - target: {fileID: 3272758868646030441, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_Name
-      value: FlowerV4
+      value: FlowerV4 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_RootOrder
@@ -21,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14.888291
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.0072702
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 15.343337
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37,15 +41,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3272758868646030442, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -59,5 +63,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3272758868646030437, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
+--- !u!1 &395793680987811084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3272758868646030441, guid: 2eb3da35c41bf994ba55d12a6733e4c0, type: 3}
+  m_PrefabInstance: {fileID: 2888224187484766565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4894479589047055395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395793680987811084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485bb83fc053e364ba3cf080fe07dd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: {fileID: 0}
+  ItemType: 0
+  stick: {fileID: 0}
+  rock: {fileID: 0}
+  grass: {fileID: 0}
+  berries: {fileID: 0}
+  flower: {fileID: 0}
+  animatorWalkUp: {fileID: 0}
+  animatorWalkLeft: {fileID: 0}
+  animatorWalkRight: {fileID: 0}
+  animatorWalkDown: {fileID: 0}
+  movement: {fileID: 0}

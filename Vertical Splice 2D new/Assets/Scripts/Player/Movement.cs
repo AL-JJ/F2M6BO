@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private bool groundedPlayer;
     public float playerSpeed = 2.0f;
     private float gravityValue = -9.81f;
-    [HideInInspector] public bool canMove;
+     public bool canMove;
 
 
 
@@ -116,6 +116,10 @@ public class Movement : MonoBehaviour
                 playerAnimation.Idle("D");
                 rb.velocity = new Vector3(0, 0, 0);
             }
+        }
+        else
+        {
+            rb.velocity = new Vector3(0, 0, 0);
         }
         /*
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
