@@ -17,14 +17,14 @@ public class MaxwelDialogue : MonoBehaviour
     public void LineOne()
     {
         dialoguebox.text = "Say Pal, you don't look so good";
-        timer = 5;
+        timer = 2;
         _LineOneDone = true;
         
     }
     public void LineTwo()
     {
         dialoguebox.text = "You'd better find something to eat before night comes!";
-        timer = 5;
+        timer = 2;
         _LineTwoDone = true;
     }
     private void Dissapear()
