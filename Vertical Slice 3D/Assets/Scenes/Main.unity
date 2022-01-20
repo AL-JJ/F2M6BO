@@ -189,7 +189,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18846238}
-  m_LocalRotation: {x: 0.098358296, y: -0.00033557648, z: 0.00003316755, w: 0.99515104}
+  m_LocalRotation: {x: 0.098358296, y: -0.00044095085, z: 0.000043582506, w: 0.995151}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -355,9 +355,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5009542955728259291, guid: 975cf72edfccd1e45b4501a645f85d99, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1771216564546194796, guid: 975cf72edfccd1e45b4501a645f85d99, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 975cf72edfccd1e45b4501a645f85d99, type: 3}
       propertyPath: m_Name
       value: risk of rain 2 stage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600247537527589250, guid: 975cf72edfccd1e45b4501a645f85d99, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 975cf72edfccd1e45b4501a645f85d99, type: 3}
@@ -500,6 +512,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2ee4f587304fb8048a5d717086a65351, type: 3}
       propertyPath: m_Name
+      value: wisp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ee4f587304fb8048a5d717086a65351, type: 3}
+      propertyPath: m_TagString
       value: wisp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -753,6 +769,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5fc1258893d890a40ae4fae29bd64a92, type: 3}
       propertyPath: m_Name
       value: Miguell
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5fc1258893d890a40ae4fae29bd64a92, type: 3}
+      propertyPath: m_TagString
+      value: Lemurian
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5fc1258893d890a40ae4fae29bd64a92, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1045,7 +1065,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775818534}
-  m_LocalRotation: {x: 0.2176909, y: -8.5201985e-17, z: 1.1478498e-16, w: 0.9760178}
+  m_LocalRotation: {x: 0.2176909, y: 8.5201985e-17, z: -1.1478498e-16, w: 0.9760178}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1256,7 +1276,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1193816, y: -0.00025238772, z: 0.000019621817, w: 0.99284846}
+  m_LocalRotation: {x: 0.11938159, y: -0.00033164158, z: 0.00002578382, w: 0.9928484}
   m_LocalPosition: {x: 9.18, y: 3.378527, z: 26.017746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1297,6 +1317,59 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1000461180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c09293a03e1d694781dfc57556851d9, type: 3}
+  m_PrefabInstance: {fileID: 1964466884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1000461182
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000461180}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 11
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1000461183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000461180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c08b0330dcb91343a95a0d6cddad306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationPoint: {fileID: 1724326107}
+--- !u!65 &1000461184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000461180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1477469412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1576,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1514501099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514501093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.874839, y: 1.4420109, z: 1.4278197}
+  m_Center: {x: 0, y: -0.0041838586, z: 0.0056081116}
 --- !u!1 &1644060034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1696,8 @@ GameObject:
   - component: {fileID: 1724326107}
   - component: {fileID: 1724326109}
   - component: {fileID: 1724326108}
+  - component: {fileID: 1724326110}
+  - component: {fileID: 1724326111}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1665,6 +1753,31 @@ MonoBehaviour:
   controller: {fileID: 1724326108}
   Cam: {fileID: 963194228}
   speed: 11
+--- !u!114 &1724326110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724326106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35191e0f7e4c5a541ac7f1d17eee2039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1724326111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724326106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1810190073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1805,6 +1918,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c09293a03e1d694781dfc57556851d9, type: 3}
       propertyPath: m_Name
       value: Kopstootgast
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09293a03e1d694781dfc57556851d9, type: 3}
+      propertyPath: m_TagString
+      value: Beetle
       objectReference: {fileID: 0}
     - target: {fileID: 5902670362603958979, guid: 8c09293a03e1d694781dfc57556851d9, type: 3}
       propertyPath: m_LocalScale.x
