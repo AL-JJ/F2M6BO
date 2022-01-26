@@ -14,8 +14,8 @@ public class healthComponent : MonoBehaviour
         slider.value = health;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        health= health -1;
+        health= health - damage;
     }
 }

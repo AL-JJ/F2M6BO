@@ -12,14 +12,14 @@ public class Movement : MonoBehaviour
     public float Y_coordinate;
     public string Tag = "Player";
     [SerializeField]
-    private float _Range = 13f;
+    private float _Range = 10f;
     [SerializeField]
     private GameObject _player;
     private float _playerPosX;
     private float _playerPosZ;
     private float _PosY;
 
-    public float Speed = 400f;
+    public float Speed = 3f;
 
 
     void Start()
@@ -36,10 +36,7 @@ public class Movement : MonoBehaviour
         _playerPosZ = _player.transform.position.z;
         _PosY = _groundCheck.TargetHeight;
         RangeToPlayer();
-
-        //print(_playerPosX);
-        print(_PosY);
-        //print(_playerPosZ);
+        
     }
     
     private void RangeToPlayer()
@@ -49,7 +46,6 @@ public class Movement : MonoBehaviour
         {
             GetComponent<StateManager>().ChangeBehavoir("OutOfRange");
             MoveToPlayer(_playerPosX, _PosY , _playerPosZ);
-            print("dit werkt!");
             
             //cant shoot
         }

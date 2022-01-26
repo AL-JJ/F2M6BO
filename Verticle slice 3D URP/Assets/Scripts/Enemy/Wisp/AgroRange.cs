@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AgroRange : MonoBehaviour
 {
+	[HideInInspector]
 	public string Tag = "Player";
-	public float _AgroRange =2f;
+	public float _AgroRange =10f;
 	private bool PlayerFound = false;
 
 	void Start()

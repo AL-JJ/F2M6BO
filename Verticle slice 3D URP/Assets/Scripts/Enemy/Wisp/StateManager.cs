@@ -19,19 +19,19 @@ public class StateManager : MonoBehaviour
         switch (state)
         {
             case State.Inactive:
-                GetComponentInChildren<EnemyShoot>().enabled = false;
+                GetComponentInChildren<Wisp_Shoot>().enabled = false;
                 GetComponentInChildren<TrackPlayer>().enabled = false;
                 GetComponent<Movement>().enabled = false;
                     break;
 
             case State.FoundPlayer:
-                GetComponentInChildren<EnemyShoot>().enabled = true;
+                GetComponentInChildren<Wisp_Shoot>().enabled = true;
                 GetComponentInChildren<TrackPlayer>().enabled = true;
                 GetComponent<Movement>().enabled = true;
                 break;
 
             case State.OutOfRange:
-                GetComponentInChildren<EnemyShoot>().enabled = false;
+                GetComponentInChildren<Wisp_Shoot>().enabled = false;
                 GetComponentInChildren<TrackPlayer>().enabled = false;
                 //laat enemy naar player bewegen tot hij in range is
                 break;

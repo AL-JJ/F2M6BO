@@ -5,12 +5,12 @@ using UnityEngine;
 public class GoundCheck : MonoBehaviour
 {
     [SerializeField]
-    private float maxDistance = 10f;
+    private float maxDistance = 3f;
     [SerializeField]
     RaycastHit hit;
     [HideInInspector]
     public float TargetHeight;
-    private float MinimumDistance = 10f;
+    private float MinimumDistance = 3f;
 
 
 
