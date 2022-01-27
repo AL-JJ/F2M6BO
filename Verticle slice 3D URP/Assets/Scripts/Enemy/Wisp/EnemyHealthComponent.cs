@@ -13,6 +13,7 @@ public class EnemyHealthComponent : MonoBehaviour
     public string Damage;
     [SerializeField]
     private TextMeshProUGUI DamageText;
+    private Animator anim;
 
     public void EnemyTakeDamage(int damage)
     {
@@ -22,6 +23,7 @@ public class EnemyHealthComponent : MonoBehaviour
     }
     private void Start()
     {
+        anim = GetComponent<Animator>();
         CurrentHealth = MaxHp;
         slider.maxValue = MaxHp ;
     }
@@ -32,8 +34,9 @@ public class EnemyHealthComponent : MonoBehaviour
 
         if(CurrentHealth == 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("Dead", true);            
         }
     }
+
 }
 

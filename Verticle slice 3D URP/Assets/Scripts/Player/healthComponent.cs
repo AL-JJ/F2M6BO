@@ -8,7 +8,14 @@ public class healthComponent : MonoBehaviour
   
     public int health = 110;
     public Slider slider;
+    public int CurrentHealth;
 
+
+    private void Start()
+    {
+        CurrentHealth = health;
+        SetHealth(health);
+    }
     public void SetHealth(int health)
     {
         slider.value = health;
@@ -16,6 +23,18 @@ public class healthComponent : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health= health - damage;
+        CurrentHealth= health - damage;
+    }
+
+
+    private void Update()
+    {
+        slider.value = CurrentHealth;
+
+        if (CurrentHealth == 0)
+        {
+            //Game over Screen
+            Destroy(gameObject);
+        }
     }
 }

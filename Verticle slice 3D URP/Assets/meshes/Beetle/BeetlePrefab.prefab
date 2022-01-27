@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 1025951924529687814}
   - component: {fileID: 1025951924529687809}
   - component: {fileID: 8913394651276602578}
+  - component: {fileID: 7887451740918146182}
   m_Layer: 0
   m_Name: BeetlePrefab
   m_TagString: Enemy
@@ -181,6 +182,18 @@ MonoBehaviour:
   CurrentHealth: 0
   Damage: 
   DamageText: {fileID: 2628832624652615828}
+--- !u!114 &7887451740918146182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215469126749878051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9173751f48a34a4fa9b85e0dd1ef5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &442862809637145441
 GameObject:
   m_ObjectHideFlags: 0
