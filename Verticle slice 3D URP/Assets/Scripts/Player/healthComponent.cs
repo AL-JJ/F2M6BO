@@ -23,7 +23,8 @@ public class healthComponent : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        CurrentHealth= health - damage;
+        CurrentHealth = CurrentHealth - damage;
+        print(CurrentHealth);
     }
 
 
