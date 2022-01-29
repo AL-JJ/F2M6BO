@@ -34,7 +34,6 @@ public class EnemyHealthComponent : MonoBehaviour
 
         if(CurrentHealth <= 0)
         {
-            print("ik ben dood"); 
             anim.SetBool("Dead", true);
         }
     }

@@ -33,20 +33,16 @@ public class Wisp_Shoot : MonoBehaviour
         {
             //Play charge animation
             gameObject.transform.GetComponent<TrackPlayer>().enabled = false;
-            Warning_Line.SetActive(true);
             
         }
         else if (_Timer <= 0f) 
         {
-            Warning_Line.SetActive(false);
+         
             anim.SetBool("Shoot", true);
             gameObject.transform.GetComponent<TrackPlayer>().enabled = true;
             _Timer = 3f;
         }
-        else if (_Timer > 1f)
-        {
-            Warning_Line.SetActive(false);
-        }
+        
     }
 
     
