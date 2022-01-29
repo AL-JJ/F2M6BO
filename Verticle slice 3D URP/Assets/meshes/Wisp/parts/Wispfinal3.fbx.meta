@@ -8,7 +8,7 @@ ModelImporter:
     second: Mouth Animation Wisp
   - first:
       74: 5499825132604791320
-    second: DEAD
+    second: Wisp_DEAD
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -74,7 +74,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: DEAD
+      name: Wisp_DEAD
       takeName: Take 001
       internalID: 0
       firstFrame: 1
@@ -98,7 +98,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0
+      - time: 0.04214558
         functionName: Death
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c9173751f48a34a4fa9b85e0dd1ef5e4, type: 3}

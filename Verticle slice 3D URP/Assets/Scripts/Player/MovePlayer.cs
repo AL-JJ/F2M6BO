@@ -26,8 +26,7 @@ public class MovePlayer : MonoBehaviour
     public LayerMask GroundMask;
     public Transform Cam;
 
-    Vector3 Velocity;
-    bool Grounded;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -35,8 +34,6 @@ public class MovePlayer : MonoBehaviour
     }
     void Update()
     {
-        // maakt een kleinde sphere onder het object en zorgt ervoor dat als dat met iets colide dat het true word zo niet word het false
-        Grounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -51,14 +48,6 @@ public class MovePlayer : MonoBehaviour
             Controller.Move(MoveDir * MovementSpeed * Time.deltaTime);
         }
 
-        if (Grounded && Velocity.y < 0)
-        {
-            Velocity.y = -2f;
-        }
-        if (Input.GetButtonDown("Jump") && Grounded)
-        {
-            Velocity.y = Mathf.Sqrt(Sprong * -2f * gravity);
-        }
        
 
         

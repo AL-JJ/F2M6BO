@@ -118,7 +118,7 @@ ModelImporter:
       takeName: Take 001
       internalID: 0
       firstFrame: 43
-      lastFrame: 120
+      lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -138,7 +138,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 1
+      - time: 0.053639833
+        functionName: Move
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c9173751f48a34a4fa9b85e0dd1ef5e4, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9616858
         functionName: Death
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c9173751f48a34a4fa9b85e0dd1ef5e4, type: 3}

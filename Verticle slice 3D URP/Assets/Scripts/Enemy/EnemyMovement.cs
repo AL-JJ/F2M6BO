@@ -7,8 +7,8 @@ public class EnemyMovement : MonoBehaviour
     private GameObject player;
     private string Tag = "Player";
     private Rigidbody rb;
-    [SerializeField]
-    private float speed;
+    [HideInInspector]
+    public float speed;
     private Animator anim;
     public string State;
     [SerializeField]
@@ -29,7 +29,6 @@ public class EnemyMovement : MonoBehaviour
              transform.LookAt(PlayerPos);
              anim.SetBool("Walking" , true);
              anim.SetBool("Idle" , false);
-             anim.SetBool("Dead" , false);
              anim.SetBool("Attacking" , false);
              rb.velocity = transform.forward * speed;
              break;
@@ -39,7 +38,6 @@ public class EnemyMovement : MonoBehaviour
                 {
                     anim.SetBool("Walking", false);
                     anim.SetBool("Idle", false);
-                    anim.SetBool("Dead", false);
                     anim.SetBool("Attacking", true);
                     rb.velocity = new Vector3(0, 0, 0);
                     TimeToHit = 1f;

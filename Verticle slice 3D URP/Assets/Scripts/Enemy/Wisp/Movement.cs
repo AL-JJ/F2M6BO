@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
         _playerPosX = _player.transform.position.x;
         _playerPosZ = _player.transform.position.z;
         _PosY = _groundCheck.TargetHeight;
+        print(_PosY);
         RangeToPlayer();
         
     }

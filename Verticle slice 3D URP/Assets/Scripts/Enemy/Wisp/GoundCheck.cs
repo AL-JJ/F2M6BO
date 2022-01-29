@@ -5,7 +5,7 @@ using UnityEngine;
 public class GoundCheck : MonoBehaviour
 {
     [SerializeField]
-    private float maxDistance = 3f;
+    private float maxDistance;
     [SerializeField]
     RaycastHit hit;
     [HideInInspector]
@@ -20,7 +20,6 @@ public class GoundCheck : MonoBehaviour
     {
         
         Ray Pos = new Ray(transform.position, Vector3.down);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 999f, Color.yellow);
 
         if(Physics.Raycast(Pos, out hit, Mathf.Infinity))
         {
@@ -29,9 +28,9 @@ public class GoundCheck : MonoBehaviour
                 float DistanceToGround = hit.distance;
                 if (DistanceToGround < maxDistance)
                 {
-                    float Distance = hit.transform.position.y + maxDistance;
+                    float Distance = transform.position.y + maxDistance;
                     TargetHeight = Distance;
-                    transform.position += new Vector3(0, 0.2f, 0);
+                    //transform.position += new Vector3(0, 0.2f, 0);
                 }
             }
         }

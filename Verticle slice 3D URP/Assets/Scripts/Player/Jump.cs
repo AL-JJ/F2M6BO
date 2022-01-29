@@ -18,13 +18,13 @@ public class Jump : MonoBehaviour
         if (canJump)
         {
             canJump = false;
-            selfRigidbody.AddForce(0, force, 0, ForceMode.Impulse);
+            selfRigidbody.AddForce(new Vector3(0, force, 0), ForceMode.Impulse);
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             canJump = true;
         }

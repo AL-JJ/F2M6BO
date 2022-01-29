@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b798b2caf6389b34581d382f19ddd67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 4
+  maxDistance: 2
   TargetHeight: 0
 --- !u!114 &8191547691896505888
 MonoBehaviour:
