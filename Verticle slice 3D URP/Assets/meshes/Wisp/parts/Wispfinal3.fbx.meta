@@ -5,13 +5,10 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Dead Animation Wisp
-  - first:
-      74: 3912212382721003952
     second: Mouth Animation Wisp
   - first:
-      74: 8273325049105940540
-    second: Dead
+      74: 5499825132604791320
+    second: DEAD
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -77,7 +74,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Dead
+      name: DEAD
       takeName: Take 001
       internalID: 0
       firstFrame: 1

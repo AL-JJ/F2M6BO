@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 23780263098929122}
   - component: {fileID: 981455157517783017}
   - component: {fileID: 2811117620417568919}
+  - component: {fileID: 709663378117370656}
   m_Layer: 0
   m_Name: Lemurian_Prefab
   m_TagString: Enemy
@@ -406,6 +407,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9173751f48a34a4fa9b85e0dd1ef5e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &709663378117370656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617377494465878253}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.187451, y: 1.9920208, z: 2.1716933}
+  m_Center: {x: 0.0061495295, y: 0.9160104, z: -0.20051436}
 --- !u!1 &1699475186242864529
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5533695c61bf48c45aea2130855dcebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthtext: {fileID: 0}
+  healthtext: {fileID: 981455157517783017}
 --- !u!114 &281472929962591565
 MonoBehaviour:
   m_ObjectHideFlags: 0

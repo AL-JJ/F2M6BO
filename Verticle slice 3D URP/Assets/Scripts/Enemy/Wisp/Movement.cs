@@ -63,9 +63,5 @@ public class Movement : MonoBehaviour
         float step = Speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, Target, step);
     }
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _Range);
-    }
+
 }

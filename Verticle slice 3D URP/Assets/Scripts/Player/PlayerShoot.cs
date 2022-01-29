@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-
-    public void Shoot( GameObject SelectedBullet)
+    public Transform barel;
+    public void Shoot(GameObject SelectedBullet)
     {
-        GameObject bullet = Instantiate(SelectedBullet, new Vector3(transform.position.x, transform.position.y, transform.position.z), this.gameObject.transform.rotation);
-        
+        GameObject bullet = Instantiate(SelectedBullet, new Vector3(barel.position.x, barel.position.y, barel.position.z), this.gameObject.transform.rotation);
+
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Beetle_Attack : MonoBehaviour
 {
-    private float biteRange =2f;
+    private float biteRange =4f;
     [SerializeField] private LayerMask _layer;
     public void Beetle_Bite()
     {

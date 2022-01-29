@@ -8,11 +8,10 @@ public class Wisp_Shoot : MonoBehaviour
     public float _Timer;
     [HideInInspector]
     public TrackPlayer trackPlayer;
-    private float range = 20f;
     [SerializeField]
-    private LayerMask PlayerMask = new LayerMask();
     public GameObject FireBall_Bullet;
     private Animator anim;
+    public GameObject Warning_Line;
 
 
     private healthComponent enemyHealth = null;
@@ -28,19 +27,25 @@ public class Wisp_Shoot : MonoBehaviour
     {
         Player = trackPlayer.PlayerLocation;
         _Timer -= Time.deltaTime;
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * range, Color.yellow);
 
 
         if (_Timer < 1f && _Timer > 0.5f)
         {
             //Play charge animation
             gameObject.transform.GetComponent<TrackPlayer>().enabled = false;
+            Warning_Line.SetActive(true);
+            
         }
-        else if (_Timer <= 0f)
+        else if (_Timer <= 0f) 
         {
+            Warning_Line.SetActive(false);
             anim.SetBool("Shoot", true);
             gameObject.transform.GetComponent<TrackPlayer>().enabled = true;
             _Timer = 3f;
+        }
+        else if (_Timer > 1f)
+        {
+            Warning_Line.SetActive(false);
         }
     }
 

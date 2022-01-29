@@ -32,11 +32,10 @@ public class EnemyHealthComponent : MonoBehaviour
         slider.value = CurrentHealth;
         DamageText.text = Damage;
 
-        if(CurrentHealth == 0)
+        if(CurrentHealth <= 0)
         {
-            anim.SetBool("Dead", true);            
+            anim.SetBool("Dead", true);
         }
     }
-
 }
 

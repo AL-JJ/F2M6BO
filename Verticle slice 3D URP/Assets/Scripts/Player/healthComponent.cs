@@ -24,7 +24,6 @@ public class healthComponent : MonoBehaviour
     public void TakeDamage(int damage)
     {
         CurrentHealth = CurrentHealth - damage;
-        print(CurrentHealth);
     }
 
 
